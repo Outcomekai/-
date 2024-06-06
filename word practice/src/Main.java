@@ -13,12 +13,17 @@ public class Main {
         if(!file.exists()){ 
             file.createNewFile(); 
         }
-        BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));
-        writer.write("나는 개쩐다");
+        
+        BufferedWriter writer = new BufferedWriter(new FileWriter(file, false));
+        
+        
+        writer.write("Someone who is consistent, puts in more effort, has discipline and willpower. ");
+        
+        
         writer.flush(); 
         writer.close(); 
         
-
+        
 	}
 }
 
